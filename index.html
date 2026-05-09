@@ -1,553 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Sethuraman M – Resume</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  :root {
-    --bg: #f5f0ea;
-    --card: #fdfaf6;
-    --accent1: #b5651d;
-    --accent2: #c8956c;
-    --accent3: #e8d5c0;
-    --text: #2c1f0e;
-    --muted: #7a6652;
-    --border: #e0cdb8;
-    --tag: #ede0d0;
-  }
+  <!-- Primary SEO -->
+  <title>Sethuraman M | Software Engineering Lead & AI Automation Strategist</title>
+  <meta name="description" content="Sethuraman M – 14+ years in software engineering leadership, AI-driven automation, and digital transformation. MBA graduate. Open to leadership & AI strategy roles." />
+  <meta name="keywords" content="Sethuraman M, Software Engineering Lead, AI Automation, Test Automation, Python, Robot Framework, Agile, DevOps, CI/CD, MBA, Cigna, Quality Engineering" />
+  <meta name="author" content="Sethuraman M" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sethuramanai.github.io/" />
 
-  * { margin:0; padding:0; box-sizing:border-box; }
+  <!-- Open Graph -->
+  <meta property="og:type"        content="profile" />
+  <meta property="og:title"       content="Sethuraman M | Software Engineering Lead & AI Automation Strategist" />
+  <meta property="og:description" content="14+ years in software engineering leadership, AI automation, and digital transformation. MBA graduate from University of Hartford. Open to leadership & AI strategy roles." />
+  <meta property="og:url"         content="https://sethuramanai.github.io/" />
+  <meta property="og:site_name"   content="Sethuraman M – Portfolio" />
+  <meta property="og:locale"      content="en_US" />
+  <meta property="og:image"       content="https://sethuramanai.github.io/sethu-profile.jpg" />
+  <meta property="og:image:width"  content="600" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:image:alt"   content="Sethuraman M – Software Engineering Lead & AI Automation Strategist" />
+  <meta property="profile:first_name" content="Sethuraman" />
+  <meta property="profile:last_name"  content="M" />
 
-  body {
-    font-family: 'Inter', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-  }
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="Sethuraman M | Software Engineering Lead & AI Automation Strategist" />
+  <meta name="twitter:description" content="14+ years in software engineering leadership, AI automation, and digital transformation. Open to leadership & AI strategy roles." />
+  <meta name="twitter:image"       content="https://sethuramanai.github.io/sethu-profile.jpg" />
 
-  /* NAV */
-  nav {
-    position: fixed; top:0; left:0; right:0; z-index:100;
-    background: rgba(245,240,234,0.92);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
-    display: flex; justify-content: center; gap: 2rem;
-    padding: 0.9rem 2rem;
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sethuraman M",
+    "url": "https://sethuramanai.github.io/",
+    "image": "https://sethuramanai.github.io/sethu-profile.jpg",
+    "jobTitle": "Software Engineering Lead Analyst",
+    "description": "Technology leader with 14+ years in enterprise software engineering, AI-driven automation, and digital transformation. MBA graduate from University of Hartford.",
+    "email": "mailto:sethu90@gmail.com",
+    "address": { "@type": "PostalAddress", "addressRegion": "Tamil Nadu", "addressCountry": "IN" },
+    "sameAs": [
+      "https://www.linkedin.com/in/sethu90",
+      "https://github.com/sethuramanai"
+    ],
+    "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "University of Hartford – Barney School of Business" }],
+    "knowsAbout": ["Software Engineering","AI Automation","Test Automation","Python","Robot Framework","CI/CD","Agile Transformation","Digital Transformation","Quality Engineering"],
+    "worksFor": { "@type": "Organization", "name": "Cigna Healthcare" },
+    "award": "Regents' Honor Award Nominee 2026 – University of Hartford"
   }
-  nav a {
-    text-decoration: none; color: var(--muted);
-    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em;
-    text-transform: uppercase; transition: color 0.2s;
-  }
-  nav a:hover, nav a.active { color: var(--accent1); }
+  </script>
 
-  /* HERO */
-  .hero {
-    min-height: 100vh;
-    display: flex; align-items: center; justify-content: center;
-    padding: 7rem 2rem 4rem;
-    background: linear-gradient(145deg, #f0e6d6 0%, #fdf8f2 60%, #ecddc8 100%);
-    position: relative; overflow: hidden;
-  }
-  .hero::before {
-    content:'';
-    position:absolute; top:-80px; right:-80px;
-    width:420px; height:420px; border-radius:50%;
-    background: radial-gradient(circle, #d4956040 0%, transparent 70%);
-  }
-  .hero::after {
-    content:'';
-    position:absolute; bottom:-60px; left:-60px;
-    width:300px; height:300px; border-radius:50%;
-    background: radial-gradient(circle, #b5651d25 0%, transparent 70%);
-  }
-  .hero-inner { text-align:center; max-width:780px; position:relative; z-index:1; }
-  .hero-badge {
-    display:inline-block;
-    background: var(--accent3); color: var(--accent1);
-    font-size:0.72rem; font-weight:700; letter-spacing:0.15em;
-    text-transform:uppercase; padding:0.4rem 1.1rem; border-radius:999px;
-    margin-bottom:1.5rem;
-  }
-  .hero h1 {
-    font-family:'Playfair Display', serif;
-    font-size: clamp(2.6rem, 6vw, 4.2rem);
-    color: var(--text); line-height:1.1; margin-bottom:0.6rem;
-  }
-  .hero h1 span { color: var(--accent1); }
-  .hero-title {
-    font-size:1rem; color: var(--muted); font-weight:500;
-    letter-spacing:0.04em; margin-bottom:1.8rem;
-  }
-  .hero-summary {
-    font-size:0.97rem; color: var(--muted); line-height:1.8;
-    max-width:620px; margin:0 auto 2.2rem;
-  }
-  .hero-contacts {
-    display:flex; flex-wrap:wrap; gap:0.8rem; justify-content:center;
-  }
-  .hero-contacts a {
-    text-decoration:none; background:var(--card);
-    border:1px solid var(--border); color:var(--accent1);
-    padding:0.5rem 1.2rem; border-radius:999px;
-    font-size:0.8rem; font-weight:600;
-    transition: background 0.2s, transform 0.2s;
-  }
-  .hero-contacts a:hover { background: var(--accent3); transform:translateY(-2px); }
-
-  /* SECTIONS */
-  section { padding: 5rem 2rem; }
-  section:nth-child(even) { background: var(--card); }
-  .section-inner { max-width:880px; margin:0 auto; }
-  .section-label {
-    font-size:0.72rem; font-weight:700; letter-spacing:0.18em;
-    text-transform:uppercase; color:var(--accent2); margin-bottom:0.5rem;
-  }
-  .section-title {
-    font-family:'Playfair Display', serif;
-    font-size:2rem; color:var(--text); margin-bottom:2.5rem;
-    padding-bottom:0.8rem;
-    border-bottom: 2px solid var(--accent3);
-  }
-
-  /* EXPERIENCE */
-  .exp-card {
-    background: var(--bg); border:1px solid var(--border);
-    border-radius:14px; padding:1.8rem 2rem; margin-bottom:1.4rem;
-    position:relative; transition: box-shadow 0.2s, transform 0.2s;
-  }
-  .exp-card:hover { box-shadow:0 8px 30px #b5651d15; transform:translateY(-3px); }
-  .exp-top { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.5rem; }
-  .exp-role { font-weight:700; font-size:1.05rem; color:var(--text); }
-  .exp-company { color:var(--accent1); font-weight:600; font-size:0.92rem; margin-top:0.2rem; }
-  .exp-dot {
-    width:10px; height:10px; border-radius:50%;
-    background:var(--accent1); margin-top:6px; flex-shrink:0;
-    position:absolute; left:-5px; top:2rem;
-  }
-  .exp-list { margin-top:1rem; padding-left:1.1rem; }
-  .exp-list li { font-size:0.9rem; color:var(--muted); margin-bottom:0.5rem; line-height:1.6; }
-  .exp-list li strong { color:var(--accent1); }
-
-  /* SKILLS */
-  .skills-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1.2rem; }
-  .skill-group {
-    background:var(--bg); border:1px solid var(--border);
-    border-radius:14px; padding:1.4rem 1.6rem;
-    transition: box-shadow 0.2s;
-  }
-  .skill-group:hover { box-shadow:0 6px 24px #b5651d12; }
-  .skill-group-title {
-    font-size:0.78rem; font-weight:700; text-transform:uppercase;
-    letter-spacing:0.1em; color:var(--accent1); margin-bottom:0.9rem;
-  }
-  .tags { display:flex; flex-wrap:wrap; gap:0.5rem; }
-  .tag {
-    background:var(--tag); color:var(--accent1);
-    font-size:0.78rem; font-weight:600; padding:0.3rem 0.85rem;
-    border-radius:999px;
-  }
-
-  /* PROJECTS */
-  .projects-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:1.2rem; }
-  .proj-card {
-    background:var(--bg); border:1px solid var(--border);
-    border-radius:14px; padding:1.6rem;
-    transition: box-shadow 0.2s, transform 0.2s;
-  }
-  .proj-card:hover { box-shadow:0 8px 28px #b5651d15; transform:translateY(-3px); }
-  .proj-title { font-weight:700; font-size:1rem; color:var(--text); margin-bottom:0.5rem; }
-  .proj-desc { font-size:0.87rem; color:var(--muted); line-height:1.65; margin-bottom:0.9rem; }
-
-  /* EDUCATION */
-  .edu-cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.2rem; }
-  .edu-card {
-    background:var(--bg); border:1px solid var(--border);
-    border-radius:14px; padding:1.6rem;
-  }
-  .edu-degree { font-weight:700; font-size:1rem; color:var(--text); margin-bottom:0.3rem; }
-  .edu-school { color:var(--accent1); font-weight:600; font-size:0.9rem; margin-bottom:0.5rem; }
-  .edu-detail { font-size:0.85rem; color:var(--muted); line-height:1.6; }
-  .gpa-badge {
-    display:inline-block; margin-top:0.6rem;
-    background:var(--accent3); color:var(--accent1);
-    font-size:0.75rem; font-weight:700; padding:0.25rem 0.8rem; border-radius:999px;
-  }
-
-  /* CERTIFICATIONS */
-  .cert-list { display:flex; flex-wrap:wrap; gap:1rem; }
-  .cert-card {
-    background:var(--bg); border:1px solid var(--border);
-    border-radius:12px; padding:1.2rem 1.5rem;
-    display:flex; align-items:center; gap:0.9rem;
-    transition: box-shadow 0.2s;
-  }
-  .cert-card:hover { box-shadow:0 4px 20px #b5651d15; }
-  .cert-icon { font-size:1.5rem; }
-  .cert-name { font-weight:600; font-size:0.9rem; color:var(--text); }
-  .cert-issuer { font-size:0.78rem; color:var(--muted); margin-top:0.1rem; }
-
-  /* CONTACT */
-  .contact-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1rem; }
-  .contact-item {
-    background:var(--bg); border:1px solid var(--border);
-    border-radius:12px; padding:1.3rem 1.5rem; text-align:center;
-    text-decoration:none; color:var(--text);
-    transition: box-shadow 0.2s, transform 0.2s;
-    display:block;
-  }
-  .contact-item:hover { box-shadow:0 6px 22px #b5651d18; transform:translateY(-3px); color:var(--accent1); }
-  .contact-icon { font-size:1.6rem; margin-bottom:0.5rem; }
-  .contact-label { font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted); margin-bottom:0.2rem; }
-  .contact-value { font-size:0.88rem; font-weight:600; }
-
-  /* FOOTER */
-  footer {
-    text-align:center; padding:2rem;
-    font-size:0.78rem; color:var(--muted);
-    border-top:1px solid var(--border);
-    background:var(--bg);
-  }
-
-  /* SCROLL ANIMATION */
-  .reveal { opacity:0; transform:translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-  .reveal.visible { opacity:1; transform:none; }
-
-  @media(max-width:600px) {
-    nav { gap:1rem; padding:0.7rem 1rem; }
-    nav a { font-size:0.68rem; }
-    .exp-card { padding:1.3rem; }
-  }
-  @media print {
-    nav, #downloadBtn { display: none !important; }
-    body { background: white; }
-    .reveal { opacity: 1 !important; transform: none !important; }
-    section { padding: 2rem 1rem; }
-    .exp-card, .skill-group, .proj-card, .edu-card, .cert-card, .contact-item {
-      break-inside: avoid;
-      box-shadow: none !important;
-    }
-  }
-</style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav id="navbar">
-  <a href="#about" class="active">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#education">Education</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <!-- NAV -->
+  <nav id="navbar"></nav>
 
-<!-- HERO / ABOUT -->
-<section class="hero" id="about">
-  <div class="hero-inner">
-    <div class="hero-badge">14+ Years in Tech Leadership</div>
-    <h1>Sethuraman <span>M</span></h1>
-    <p class="hero-title">MBA Graduate &nbsp;·&nbsp; Software Engineering Lead &nbsp;·&nbsp; AI & Automation Strategist</p>
-    <p class="hero-summary">
-      Technology leader with 14+ years driving enterprise software engineering, automation strategy, and digital transformation. MBA graduate from the University of Hartford with expertise in AI-enabled automation, quality engineering, and Agile transformation — bridging technical execution with business strategy.
-    </p>
-    <div class="hero-contacts">
-      <a href="#" id="downloadBtn">📄 Download CV</a>
-      <a href="#certifications">🏆 Regents' Award Nominee</a>
-      <a href="#contact">💬 Open to Opportunities</a>
-      <a href="#experience">🎤 Conference Speaker</a>
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-inner">
+      <div class="hero-photo-wrap">
+        <img src="sethu-profile-circle.png" alt="Sethuraman M" class="hero-photo" />
+      </div>
+      <div class="hero-badge" id="hero-badge"></div>
+      <h1><span id="hero-name-first"></span><span id="hero-name-last"></span></h1>
+      <p class="hero-title" id="hero-title"></p>
+      <p class="hero-summary" id="hero-summary"></p>
+      <div class="hero-contacts" id="hero-contacts"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-inner">
-    <p class="section-label reveal">Career</p>
-    <h2 class="section-title reveal">Professional Experience</h2>
-
-    <div class="exp-card reveal">
-      <div class="exp-top">
-        <div>
-          <div class="exp-role">Software Engineering Lead Analyst</div>
-          <div class="exp-company">Cigna Healthcare</div>
-        </div>
-        <span class="tag">Current</span>
-      </div>
-      <ul class="exp-list">
-        <li>Architected scalable automation frameworks using Python & Robot Framework, reducing manual testing effort by <strong>30–50%</strong></li>
-        <li>Integrated automated testing into CI/CD pipelines, accelerating release cycles by <strong>20–30%</strong></li>
-        <li>Implemented API automation strategies, improving integration reliability and reducing production defects</li>
-        <li>Led Agile transformation initiatives, improving sprint predictability and team productivity</li>
-        <li>Mentored cross-functional teams on automation best practices, increasing adoption across projects</li>
-        <li>Presented at <strong>Cigna Technology Conference 2023</strong> on Microservices Architecture</li>
-        <li>Blogged on internal platforms about AI market trends and enterprise adoption</li>
-        <li>Contributed to the <strong>AI Clinical Innovation Team</strong> on the Healthcare OS platform — delivering Voice Agents, a Pipeline Dashboard, Flu Vaccine Reminder, and ED Discharge Follow-up Agent; tested guardrails using Eval frameworks and set up & configured <strong>Jira from scratch</strong> for the team</li>
-      </ul>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <p class="section-label reveal">Career</p>
+      <h2 class="section-title reveal">Professional Experience</h2>
+      <div id="exp-list"></div>
     </div>
+  </section>
 
-    <div class="exp-card reveal">
-      <div class="exp-top">
-        <div>
-          <div class="exp-role">Test Automation Lead</div>
-          <div class="exp-company">Cognizant Technology Solutions (CTS)</div>
-        </div>
-      </div>
-      <ul class="exp-list">
-        <li>Delivered automation solutions for large enterprise clients</li>
-        <li>Led API testing initiatives and improved regression efficiency</li>
-        <li>Supported continuous improvement in software quality engineering practices</li>
-      </ul>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-label reveal">Expertise</p>
+      <h2 class="section-title reveal">Core Skills</h2>
+      <div class="skills-grid" id="skills-grid"></div>
     </div>
+  </section>
 
-    <div class="exp-card reveal">
-      <div class="exp-top">
-        <div>
-          <div class="exp-role">Software Engineer / Quality Engineering Specialist</div>
-          <div class="exp-company">Tata Consultancy Services (TCS)</div>
-        </div>
-      </div>
-      <ul class="exp-list">
-        <li>Built foundational automation frameworks supporting enterprise applications</li>
-        <li>Supported enterprise QA and full SDLC delivery</li>
-        <li>Collaborated with cross-functional teams to enhance QA processes and standards</li>
-      </ul>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-label reveal">Work</p>
+      <h2 class="section-title reveal">Key Projects</h2>
+      <div class="projects-grid" id="projects-grid"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-inner">
-    <p class="section-label reveal">Expertise</p>
-    <h2 class="section-title reveal">Core Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-group reveal">
-        <div class="skill-group-title">⚙️ Automation & Engineering</div>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Robot Framework</span>
-          <span class="tag">API Testing</span>
-          <span class="tag">Test Automation</span>
-          <span class="tag">Quality Engineering</span>
-          <span class="tag">Test Strategy</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <div class="skill-group-title">🔧 DevOps & Tools</div>
-        <div class="tags">
-          <span class="tag">Jenkins</span>
-          <span class="tag">GitHub Actions</span>
-          <span class="tag">CI/CD Pipelines</span>
-          <span class="tag">Git</span>
-          <span class="tag">REST APIs</span>
-          <span class="tag">Microservices</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <div class="skill-group-title">🚀 Leadership & Strategy</div>
-        <div class="tags">
-          <span class="tag">Agile Delivery</span>
-          <span class="tag">Digital Transformation</span>
-          <span class="tag">Process Optimization</span>
-          <span class="tag">AI Adoption</span>
-          <span class="tag">Team Mentoring</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <div class="skill-group-title">🤖 AI & Research</div>
-        <div class="tags">
-          <span class="tag">AI-Driven Automation</span>
-          <span class="tag">Intelligent QE</span>
-          <span class="tag">Enterprise AI</span>
-          <span class="tag">Innovation Strategy</span>
-        </div>
-      </div>
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-inner">
+      <p class="section-label reveal">Academic</p>
+      <h2 class="section-title reveal">Education</h2>
+      <div class="edu-cards" id="edu-list"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-inner">
-    <p class="section-label reveal">Work</p>
-    <h2 class="section-title reveal">Key Projects</h2>
-    <div class="projects-grid">
-      <div class="proj-card reveal">
-        <div class="proj-title">🧪 Enterprise Test Automation Framework</div>
-        <p class="proj-desc">Designed and implemented a scalable automation framework at Cigna Healthcare using Python & Robot Framework, cutting manual testing by up to 50% across high-availability systems.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">Robot Framework</span><span class="tag">CI/CD</span></div>
-      </div>
-      <div class="proj-card reveal">
-        <div class="proj-title">🔗 API Automation Strategy</div>
-        <p class="proj-desc">Built end-to-end API automation strategies that improved integration reliability, reduced production defects, and enabled faster, more dependable release cycles.</p>
-        <div class="tags"><span class="tag">REST APIs</span><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span></div>
-      </div>
-      <div class="proj-card reveal">
-        <div class="proj-title">⚡ CI/CD Pipeline Integration</div>
-        <p class="proj-desc">Integrated automated testing into modern CI/CD pipelines, accelerating software delivery by 20–30% while maintaining high engineering quality standards.</p>
-        <div class="tags"><span class="tag">Jenkins</span><span class="tag">Git</span><span class="tag">DevOps</span></div>
-      </div>
-      <div class="proj-card reveal">
-        <div class="proj-title">🔄 Agile Transformation Initiative</div>
-        <p class="proj-desc">Led organization-wide Agile adoption programs, improving sprint predictability and engineering team productivity across cross-functional units at Cigna.</p>
-        <div class="tags"><span class="tag">Agile</span><span class="tag">Leadership</span><span class="tag">Process Optimization</span></div>
-      </div>
-      <div class="proj-card reveal">
-        <div class="proj-title">🤖 AI in Enterprise Automation</div>
-        <p class="proj-desc">Explored and applied emerging AI concepts to enterprise automation strategy as part of MBA research, contributing to internal knowledge platforms and technology conference presentations.</p>
-        <div class="tags"><span class="tag">AI Strategy</span><span class="tag">Research</span><span class="tag">Thought Leadership</span></div>
-      </div>
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="section-inner">
+      <p class="section-label reveal">Credentials</p>
+      <h2 class="section-title reveal">Certifications & Recognition</h2>
+      <div class="cert-list" id="certs-list"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- EDUCATION -->
-<section id="education">
-  <div class="section-inner">
-    <p class="section-label reveal">Academic</p>
-    <h2 class="section-title reveal">Education</h2>
-    <div class="edu-cards">
-      <div class="edu-card reveal">
-        <div class="edu-degree">Master of Business Administration (MBA)</div>
-        <div class="edu-school">University of Hartford — Barney School of Business</div>
-        <div class="edu-detail">Focus: Strategy, Innovation & Digital Transformation<br>Emphasis on aligning technology leadership with business strategy.<br>Matriculated: August 2023</div>
-        <span class="gpa-badge">GPA: 3.8 / 4.0</span>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-degree">Bachelor of Technology (B.Tech) – Information Technology</div>
-        <div class="edu-school">India</div>
-        <div class="edu-detail">Foundation in software engineering, systems design, and information technology principles underpinning 14+ years of enterprise delivery.</div>
-      </div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <p class="section-label reveal">Get In Touch</p>
+      <h2 class="section-title reveal">Contact</h2>
+      <div class="contact-grid" id="contact-grid"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="section-inner">
-    <p class="section-label reveal">Credentials</p>
-    <h2 class="section-title reveal">Certifications & Recognition</h2>
-    <div class="cert-list">
-      <div class="cert-card reveal">
-        <div class="cert-icon">🏆</div>
-        <div>
-          <div class="cert-name">Regents' Honor Award Nominee 2026</div>
-          <div class="cert-issuer">University of Hartford</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🎤</div>
-        <div>
-          <div class="cert-name">Tech Conference Speaker 2023</div>
-          <div class="cert-issuer">Cigna Technology Conference – Microservices Architecture</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🤖</div>
-        <div>
-          <div class="cert-name">AI & Automation Thought Leader</div>
-          <div class="cert-issuer">Internal Knowledge Platform – Cigna Healthcare</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">📜</div>
-        <div>
-          <div class="cert-name">Agile & DevOps Practitioner</div>
-          <div class="cert-issuer">Enterprise Practice – CTS, TCS, Cigna</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🧠</div>
-        <div>
-          <div class="cert-name">Certified GenAI Technologist</div>
-          <div class="cert-issuer">Cigna Healthcare</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🌟</div>
-        <div>
-          <div class="cert-name">Aspiring Leader Program – Completed</div>
-          <div class="cert-issuer">Cigna Healthcare</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- FOOTER -->
+  <footer>
+    <p id="footer-text"></p>
+  </footer>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-inner">
-    <p class="section-label reveal">Get In Touch</p>
-    <h2 class="section-title reveal">Contact</h2>
-    <div class="contact-grid">
-      <a class="contact-item reveal" href="mailto:sethu90@gmail.com">
-        <div class="contact-icon">✉️</div>
-        <div class="contact-label">Email</div>
-        <div class="contact-value">sethu90@gmail.com</div>
-      </a>
-      <div class="contact-item reveal">
-        <div class="contact-icon">📍</div>
-        <div class="contact-label">Location</div>
-        <div class="contact-value">Tamil Nadu, India</div>
-      </div>
-      <div class="contact-item reveal">
-        <div class="contact-icon">💼</div>
-        <div class="contact-label">LinkedIn</div>
-        <div class="contact-value"><a href="https://linkedin.com/in/sethu90" target="_blank" style="color:inherit;text-decoration:none;">linkedin.com/in/sethu90</a></div>
-      </div>
-      <div class="contact-item reveal">
-        <div class="contact-icon">🌐</div>
-        <div class="contact-label">Open To</div>
-        <div class="contact-value">Leadership & AI Strategy Roles</div>
-      </div>
-    </div>
-  </div>
-</section>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
 
-<footer>
-  <p>© 2026 Sethuraman M &nbsp;·&nbsp; MBA | Software Engineering Lead | AI & Automation Strategist</p>
-</footer>
-
-<script>
-  // Download CV as PDF
-  document.getElementById('downloadBtn').addEventListener('click', e => {
-    e.preventDefault();
-    const style = document.createElement('style');
-    style.textContent = 'nav, #downloadBtn { display: none !important; }';
-    document.head.appendChild(style);
-    window.print();
-    document.head.removeChild(style);
-  });
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});
-    });
-  });
-
-  // Active nav
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('nav a');
-  window.addEventListener('scroll', () => {
-    let cur = '';
-    sections.forEach(s => { if(window.scrollY >= s.offsetTop - 120) cur = s.id; });
-    navLinks.forEach(a => {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
-    });
-  });
-
-  // Reveal on scroll
-  const reveals = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-  }, {threshold: 0.1});
-  reveals.forEach(r => obs.observe(r));
-</script>
 </body>
 </html>

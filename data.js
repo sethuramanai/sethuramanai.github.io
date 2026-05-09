@@ -1,0 +1,161 @@
+// data.js — All content for Sethuraman M's personal site
+// Edit this file to update any text, links, or details on the site.
+
+const DATA = {
+
+  profile: {
+    name: "Sethuraman M",
+    tagline: "MBA Graduate · Software Engineering Lead · AI & Automation Strategist",
+    headline: "14+ Years in Tech Leadership",
+    bio: "Technology leader with 14+ years driving enterprise software engineering, automation strategy, and digital transformation. MBA graduate from the University of Hartford with expertise in AI-enabled automation, quality engineering, and Agile transformation — bridging technical execution with business strategy.",
+    cvLink: "#",
+    awardsLink: "#certifications",
+    contactLink: "#contact",
+    speakerLink: "#experience",
+  },
+
+  nav: [
+    { label: "About",          href: "#about" },
+    { label: "Experience",     href: "#experience" },
+    { label: "Skills",         href: "#skills" },
+    { label: "Projects",       href: "#projects" },
+    { label: "Education",      href: "#education" },
+    { label: "Certifications", href: "#certifications" },
+    { label: "Contact",        href: "#contact" },
+  ],
+
+  experience: [
+    {
+      title: "Software Engineering Lead Analyst",
+      company: "Cigna Healthcare",
+      duration: "Current",
+      bullets: [
+        "Architected scalable automation frameworks using Python & Robot Framework, reducing manual testing effort by 30–50%",
+        "Integrated automated testing into CI/CD pipelines, accelerating release cycles by 20–30%",
+        "Implemented API automation strategies, improving integration reliability and reducing production defects",
+        "Led Agile transformation initiatives, improving sprint predictability and team productivity",
+        "Mentored cross-functional teams on automation best practices, increasing adoption across projects",
+        "Presented at Cigna Technology Conference 2023 on Microservices Architecture",
+        "Blogged on internal platforms about AI market trends and enterprise adoption",
+        "Contributed to the AI Clinical Innovation Team on the Healthcare OS platform — delivering Voice Agents, a Pipeline Dashboard, Flu Vaccine Reminder, and ED Discharge Follow-up Agent; tested guardrails using Eval frameworks and set up & configured Jira from scratch for the team",
+      ],
+    },
+    {
+      title: "Test Automation Lead",
+      company: "Cognizant Technology Solutions (CTS)",
+      duration: "",
+      bullets: [
+        "Delivered automation solutions for large enterprise clients",
+        "Led API testing initiatives and improved regression efficiency",
+        "Supported continuous improvement in software quality engineering practices",
+      ],
+    },
+    {
+      title: "Software Engineer / Quality Engineering Specialist",
+      company: "Tata Consultancy Services (TCS)",
+      duration: "",
+      bullets: [
+        "Built foundational automation frameworks supporting enterprise applications",
+        "Supported enterprise QA and full SDLC delivery",
+        "Collaborated with cross-functional teams to enhance QA processes and standards",
+      ],
+    },
+  ],
+
+  skills: [
+    {
+      category: "⚙️ Automation & Engineering",
+      items: ["Python", "Robot Framework", "API Testing", "Test Automation", "Quality Engineering", "Test Strategy"],
+    },
+    {
+      category: "🔧 DevOps & Tools",
+      items: ["Jenkins", "GitHub Actions", "CI/CD Pipelines", "Git", "REST APIs", "Microservices"],
+    },
+    {
+      category: "🚀 Leadership & Strategy",
+      items: ["Agile Delivery", "Digital Transformation", "Process Optimization", "AI Adoption", "Team Mentoring"],
+    },
+    {
+      category: "🤖 AI & Research",
+      items: ["AI-Driven Automation", "Intelligent QE", "Enterprise AI", "Innovation Strategy"],
+    },
+  ],
+
+  projects: [
+    {
+      icon: "🧪",
+      title: "Enterprise Test Automation Framework",
+      description: "Designed and implemented a scalable automation framework at Cigna Healthcare using Python & Robot Framework, cutting manual testing by up to 50% across high-availability systems.",
+      tags: ["Python", "Robot Framework", "CI/CD"],
+    },
+    {
+      icon: "🔗",
+      title: "API Automation Strategy",
+      description: "Built end-to-end API automation strategies that improved integration reliability, reduced production defects, and enabled faster, more dependable release cycles.",
+      tags: ["REST APIs", "Jenkins", "GitHub Actions"],
+    },
+    {
+      icon: "⚡",
+      title: "CI/CD Pipeline Integration",
+      description: "Integrated automated testing into modern CI/CD pipelines, accelerating software delivery by 20–30% while maintaining high engineering quality standards.",
+      tags: ["Jenkins", "Git", "DevOps"],
+    },
+    {
+      icon: "🔄",
+      title: "Agile Transformation Initiative",
+      description: "Led organization-wide Agile adoption programs, improving sprint predictability and engineering team productivity across cross-functional units at Cigna.",
+      tags: ["Agile", "Leadership", "Process Optimization"],
+    },
+    {
+      icon: "🤖",
+      title: "AI in Enterprise Automation",
+      description: "Explored and applied emerging AI concepts to enterprise automation strategy as part of MBA research, contributing to internal knowledge platforms and technology conference presentations.",
+      tags: ["AI Strategy", "Research", "Thought Leadership"],
+    },
+  ],
+
+  education: [
+    {
+      degree: "Master of Business Administration (MBA)",
+      institution: "University of Hartford — Barney School of Business",
+      details: [
+        "Focus: Strategy, Innovation & Digital Transformation",
+        "Emphasis on aligning technology leadership with business strategy.",
+        "Matriculated: August 2023",
+      ],
+      gpa: "GPA: 3.8 / 4.0",
+    },
+    {
+      degree: "Bachelor of Technology (B.Tech) – Information Technology",
+      institution: "India",
+      details: [
+        "Foundation in software engineering, systems design, and information technology principles underpinning 14+ years of enterprise delivery.",
+      ],
+      gpa: "",
+    },
+  ],
+
+  certifications: [
+    { icon: "🏆", title: "Regents' Honor Award Nominee 2026",       org: "University of Hartford" },
+    { icon: "🎤", title: "Tech Conference Speaker 2023",             org: "Cigna Technology Conference – Microservices Architecture" },
+    { icon: "🤖", title: "AI & Automation Thought Leader",           org: "Internal Knowledge Platform – Cigna Healthcare" },
+    { icon: "📜", title: "Agile & DevOps Practitioner",              org: "Enterprise Practice – CTS, TCS, Cigna" },
+    { icon: "🧠", title: "Certified GenAI Technologist",             org: "Cigna Healthcare" },
+    { icon: "🌟", title: "Aspiring Leader Program – Completed",      org: "Cigna Healthcare" },
+  ],
+
+  contact: {
+    email: "sethu90@gmail.com",
+    location: "Tamil Nadu, India",
+    linkedin: "linkedin.com/in/sethu90",
+    linkedinHref: "https://linkedin.com/in/sethu90",
+    openTo: "Leadership & AI Strategy Roles",
+  },
+
+  footer: {
+    name: "Sethuraman M",
+    roles: "MBA | Software Engineering Lead | AI & Automation Strategist",
+    year: "2026",
+  },
+
+};

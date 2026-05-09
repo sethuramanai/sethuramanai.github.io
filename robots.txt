@@ -1,0 +1,8 @@
+# robots.txt for Sethuraman M – Personal Site
+# Place this file at the ROOT of your GitHub repo (same level as index.html)
+
+User-agent: *
+Allow: /
+
+# Sitemap location – update sethuramanai.github.io
+Sitemap: https://sethuramanai.github.io/sitemap.xml

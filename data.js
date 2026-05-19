@@ -28,7 +28,7 @@ const DATA = {
     {
       title: "Software Engineering Lead Analyst",
       company: "Cigna Healthcare",
-      duration: "Current",
+      duration: "Jan 2023-Current",
       bullets: [
         "Architected scalable automation frameworks using Python & Robot Framework, reducing manual testing effort by 30–50%",
         "Integrated automated testing into CI/CD pipelines, accelerating release cycles by 20–30%",
@@ -40,24 +40,27 @@ const DATA = {
         "Contributed to the AI Clinical Innovation Team on the Healthcare OS platform — delivering Voice Agents, a Pipeline Dashboard, Flu Vaccine Reminder, and ED Discharge Follow-up Agent; tested guardrails using Eval frameworks and set up & configured Jira from scratch for the team",
       ],
     },
+
+    
     {
-      title: "Test Automation Lead",
-      company: "Cognizant Technology Solutions (CTS)",
-      duration: "",
-      bullets: [
-        "Delivered automation solutions for large enterprise clients",
-        "Led API testing initiatives and improved regression efficiency",
-        "Supported continuous improvement in software quality engineering practices",
-      ],
-    },
-    {
-      title: "Software Engineer / Quality Engineering Specialist",
+     title: "Software Engineer / Quality Engineering Specialist",
       company: "Tata Consultancy Services (TCS)",
-      duration: "",
+      duration: "Jun 2021-Jan 2023",
       bullets: [
         "Built foundational automation frameworks supporting enterprise applications",
         "Supported enterprise QA and full SDLC delivery",
         "Collaborated with cross-functional teams to enhance QA processes and standards",
+      ],
+    },
+    {
+       title: "Test Automation Lead",
+      company: "Cognizant Technology Solutions (CTS)",
+      duration: "Dec 2014- Jun 2021",
+      bullets: [
+        "Delivered automation solutions for large enterprise clients",
+        "Led API testing initiatives and improved regression efficiency",
+        "Supported continuous improvement in software quality engineering practices",
+      
       ],
     },
   ],
@@ -145,8 +148,8 @@ const DATA = {
   ],
 
   contact: {
-    email: "sethu90@gmail.com",
-    location: "Tamil Nadu, India",
+    email: "sethuraman.m@cigna.com",
+    Mobile: "+91-9659856263",
     linkedin: "linkedin.com/in/sethu90",
     linkedinHref: "https://linkedin.com/in/sethu90",
     openTo: "Leadership & AI Strategy Roles",

@@ -317,7 +317,6 @@ footer {
   box-shadow: 0 8px 32px rgba(181, 101, 29, 0.2), 0 0 0 8px rgba(181, 101, 29, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .hero-photo:hover {
   transform: scale(1.04);
   box-shadow: 0 12px 40px rgba(181, 101, 29, 0.3), 0 0 0 10px rgba(181, 101, 29, 0.1);

@@ -148,11 +148,17 @@ const DATA = {
   ],
 
   contact: {
-    email: "sethuraman.m@cigna.com",
-    Mobile: "+91-9659856263",
+    email: "sethuraman.m@cignahealthcare.com",
+    mobile: "+91-9659856263",
+    location: "Tamil Nadu, India",
     linkedin: "linkedin.com/in/sethu90",
     linkedinHref: "https://linkedin.com/in/sethu90",
     openTo: "Leadership & AI Strategy Roles",
+  },
+
+  site: {
+    githubRepo: "https://github.com/sethuramanai/sethuramanai.github.io/tree/master",
+    githubLabel: "View code on GitHub",
   },
 
   footer: {

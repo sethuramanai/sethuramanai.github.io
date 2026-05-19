@@ -3,10 +3,19 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ── Nav ────────────────────────────────────────────────────
+  const { githubRepo, githubLabel } = DATA.site;
   const navEl = document.getElementById('navbar');
-  navEl.innerHTML = DATA.nav.map(n =>
-    `<a href="${n.href}">${n.label}</a>`
-  ).join('');
+  navEl.innerHTML = `
+    <a class="github-repo-link nav-github" href="${githubRepo}" target="_blank" rel="noopener noreferrer" aria-label="${githubLabel}" title="${githubLabel}">
+      <svg class="github-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.465-2.38 1.235-3.22.135-.303.54-1.523.117-3.176 0 0 .98-.322 3.053 1.235 1.89-.52 3.91-.78 5.93-.78 2.02 0 4.04.26 5.93.78 2.072-1.557 3.052-1.235 3.052-1.235.423 1.653.017 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.807 5.625-5.479 5.92.43.372.823 1.102.823 2.222v3.293c0 .32.192.694.801.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+      <span class="github-repo-text">${githubLabel}</span>
+    </a>
+    <div class="nav-links">
+      ${DATA.nav.map(n => `<a href="${n.href}">${n.label}</a>`).join('')}
+    </div>
+  `;
 
   // ── Hero ───────────────────────────────────────────────────
   document.getElementById('hero-badge').textContent    = DATA.profile.headline;
@@ -78,33 +87,42 @@ document.addEventListener('DOMContentLoaded', () => {
   `).join('');
 
   // ── Contact ────────────────────────────────────────────────
-  const { email, location, linkedin, linkedinHref, openTo } = DATA.contact;
+  const { email, mobile, location, linkedin, linkedinHref, openTo } = DATA.contact;
+  const mobileHref = `tel:${mobile.replace(/[^\d+]/g, '')}`;
   document.getElementById('contact-grid').innerHTML = `
-    <a class="contact-item reveal" href="mailto:${email}">
+    <a class="contact-item contact-item-email reveal" href="mailto:${email}">
       <div class="contact-icon">✉️</div>
       <div class="contact-label">Email</div>
       <div class="contact-value">${email}</div>
     </a>
-    <div class="contact-item reveal">
-      <div class="contact-icon">📍</div>
-      <div class="contact-label">Location</div>
-      <div class="contact-value">${location}</div>
-    </div>
-    <div class="contact-item reveal">
-      <div class="contact-icon">💼</div>
-      <div class="contact-label">LinkedIn</div>
-      <div class="contact-value"><a href="${linkedinHref}" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">${linkedin}</a></div>
-    </div>
-    <div class="contact-item reveal">
-      <div class="contact-icon">🌐</div>
-      <div class="contact-label">Open To</div>
-      <div class="contact-value">${openTo}</div>
+    <div class="contact-row reveal">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-label">Location</div>
+        <div class="contact-value">${location}</div>
+      </div>
+      <a class="contact-item" href="${mobileHref}">
+        <div class="contact-icon">📱</div>
+        <div class="contact-label">Mobile</div>
+        <div class="contact-value">${mobile}</div>
+      </a>
+      <a class="contact-item" href="${linkedinHref}" target="_blank" rel="noopener noreferrer">
+        <div class="contact-icon">💼</div>
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">${linkedin}</div>
+      </a>
+      <div class="contact-item">
+        <div class="contact-icon">🌐</div>
+        <div class="contact-label">Open To</div>
+        <div class="contact-value">${openTo}</div>
+      </div>
     </div>
   `;
 
   // ── Footer ─────────────────────────────────────────────────
+  const { year, name, roles } = DATA.footer;
   document.getElementById('footer-text').innerHTML =
-    `© ${DATA.footer.year} ${DATA.footer.name} &nbsp;·&nbsp; ${DATA.footer.roles}`;
+    `© ${year} ${name} &nbsp;·&nbsp; ${roles}`;
 
   // ── Download CV (print) ────────────────────────────────────
   document.addEventListener('click', e => {
@@ -128,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Active nav highlight ───────────────────────────────────
   const sections  = document.querySelectorAll('section[id]');
-  const navLinks  = document.querySelectorAll('nav a');
+  const navLinks  = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
     let cur = '';
     sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });

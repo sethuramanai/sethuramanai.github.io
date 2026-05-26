@@ -143,6 +143,7 @@ const DATA = {
     { icon: "🎤", title: "Tech Conference Speaker 2023",             org: "Cigna Technology Conference – Microservices Architecture" },
     { icon: "🤖", title: "AI & Automation Thought Leader",           org: "Internal Knowledge Platform – Cigna Healthcare" },
     { icon: "📜", title: "Agile & DevOps Practitioner",              org: "Enterprise Practice – CTS, TCS, Cigna" },
+     { icon: "🌟", title: "AWS Cloud Practioner",                    org: "Amazon Web Services" },
     { icon: "🧠", title: "Certified GenAI Technologist",             org: "Cigna Healthcare" },
     { icon: "🌟", title: "Aspiring Leader Program – Completed",      org: "Cigna Healthcare" },
   ],

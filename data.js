@@ -227,10 +227,11 @@ const DATA = {
     },
 		   {
       icon: "🎓",
-      title: "Introduction to subagents",
+      title: "Introduction to agent skills",
       org: "Anthropic Academy · Anthropic Education",
+	  date: "May 20, 2026"		   
       status: "completed",
-      verifyUrl: "https://verify.skilljar.com/c/9hvtr46ay768",
+      verifyUrl: "https://verify.skilljar.com/c/taoqz8cfuocv",
     },
   ],
 
@@ -245,7 +246,7 @@ const DATA = {
 
   site: {
     githubRepo: "https://github.com/sethuramanai/sethuramanai.github.io/tree/master",
-    githubLabel: "View code on GitHub",
+    githubLabel: "View Source",
   },
 
   footer: {

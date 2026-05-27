@@ -209,7 +209,7 @@ const DATA = {
       status: "completed",
       verifyUrl: "https://verify.skilljar.com/c/gmp2hgm2j39u",
     },
-	   {
+	{
       icon: "🎓",
       title: "Introduction to Claude Cowork",
       org: "Anthropic Academy · Anthropic Education",
@@ -217,7 +217,7 @@ const DATA = {
       status: "completed",
       verifyUrl: "https://verify.skilljar.com/c/o9y96ntek2sr",
     },
-		   {
+	{
       icon: "🎓",
       title: "Introduction to Model Context Protocol",
       org: "Anthropic Academy · Anthropic Education",
@@ -225,7 +225,7 @@ const DATA = {
       status: "completed",
       verifyUrl: "https://verify.skilljar.com/c/scu7ui3s5jgf",
     },
-		   {
+	{
       icon: "🎓",
       title: "Introduction to agent skills",
       org: "Anthropic Academy · Anthropic Education",

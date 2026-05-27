@@ -229,7 +229,7 @@ const DATA = {
       icon: "🎓",
       title: "Introduction to agent skills",
       org: "Anthropic Academy · Anthropic Education",
-	  date: "May 20, 2026"		   
+	  date: "May 20, 2026",		   
       status: "completed",
       verifyUrl: "https://verify.skilljar.com/c/taoqz8cfuocv",
     },
